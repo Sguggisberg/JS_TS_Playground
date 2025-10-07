@@ -42,6 +42,7 @@ Arrow Function Without Parentheses
  */
 
 let hello4 = (val) => "Hello " + val;
+let hello5 = (val)=> (val) => "Hello " + val;
 
 console.log(myFunction(1, 2));
 console.log(myFunction2(1, 2));
@@ -50,6 +51,7 @@ console.log(hello());
 console.log(hello2());
 console.log(hello3());
 console.log(hello4('World!'));
+console.log(hello5('World!')); // Does not work
 
 // foo();
 // await const z = foo3(2).then(r => r);
